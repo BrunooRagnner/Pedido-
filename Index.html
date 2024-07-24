@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Pedido - Hamburgueria Artesanal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+  <div id="popup" class="popup">
+        <video autoplay muted loop class="background-video">
+            <source src="pro.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="popup-content">
+            <span id="close" class="close">&times;</span>
+            <h2>Oferta Especial!</h2>
+            <p>Conbo02 por apenas R$38,99</p>
+        </div>
+    </div>
+          
+    <div class="logo">
+        <img src="lo.png" alt="Logo">
+    </div>
+  
+    <div class="container">
+
+      <p>Escolha Seus Produtos</p>
+        <div id="produtos">
+            <!-- Cards de produtos serão adicionados aqui -->
+        </div>
+        <p id="totalPedido">Total do Pedido: R$ 0.00</p>
+
+        <h2>Detalhes do Pedido</h2>
+        <form id="pedidoForm">
+            <label for="nomeCliente">Nome:</label>
+            <input type="text" id="nomeCliente" placeholder="Seu nome" required>
+          <br><br>
+
+            <label for="enderecoCliente">Endereço:</label>
+            <input type="text" id="enderecoCliente" placeholder="Seu endereço" required>
+              <br><br>
+            <label for="telefoneCliente">Telefone:</label>
+            <input type="text" id="telefoneCliente" placeholder="Seu telefone" required>
+            
+               <br><br>
+          
+            <div>
+                <label>Incluir taxa de 2,00 reais  entrega:</label>
+                <input type="checkbox" id="incluirTaxa">
+            </div>
+
+            <div class="payment-options">
+                <label>Forma de Pagamento:</label>
+                <div>
+                    <input type="radio" id="pagamentoPix" name="pagamento" value="Pix">
+                    <label for="pagamentoPix">Pagamento por Pix</label>
+                </div>
+                <div>
+                    <input type="radio" id="pagamentoEntrega" name="pagamento" value="Na Entrega" checked>
+                    <label for="pagamentoEntrega">Pagamento na Entrega</label>
+                </div>
+            </div>
+
+            <button type="button" id="gerarPedido">Gerar Pedido</button>
+        </form>
+    </div>
+
+    <!-- Modal de Confirmação -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmação de Pedido</h2>
+            <p>Tem certeza de que deseja finalizar o pedido?</p>
+            <button class="modal-button" id="confirmarPedido">Confirmar</button>
+            <button class="modal-button" id="cancelarPedido">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

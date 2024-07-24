@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.logo {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .logo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+ 
+#a{
+  
+  text-align: cr
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    vertical-align: top;
+    background-color: #000;
+    color: #fff
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card button {
+    margin-top: 10px;
+    background-color:  #FFA500;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color:    #FFA500;
+}
+
+#totalPedido {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#pedidoForm {
+    margin-top: 20px;
+}
+
+.payment-options {
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal-button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-button#confirmarPedido {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.modal-button#confirmarPedido:hover {
+    background-color: #218838;
+}
+
+.modal-button#cancelarPedido {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.modal-button#cancelarPedido:hover {
+    background-color: #c82333;
+}
+
+
+
+
+/* Estilo para o fundo da propaganda */
+.popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    overflow: hidden;
+}
+
+/* Estilo para o vídeo de fundo */
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Coloca o vídeo atrás do conteúdo da propaganda */
+}
+
+/* Estilo para o conteúdo da propaganda */
+.popup-content {
+    background: #00,0; /* Fundo branco semi-transparente */
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+    width: 300px;
+    text-align: center;
+}
+
+/* Estilo para o botão de fechar */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
